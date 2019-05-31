@@ -8,7 +8,7 @@ namespace MiniInformationSystem
         static void Main(string[] args)
         {
             // ArrayList ArrayPerson = new ArrayList();
-            Hashtable person = new Hashtable;
+            Hashtable person = new Hashtable();
             Console.Write("What do you want to do?Add,Delete or Search:");
             string todo = Console.ReadLine();
 
@@ -25,6 +25,8 @@ namespace MiniInformationSystem
                 person.Add("Lname", Lname);
                 person.Add("Fname", Fname);
             }
+
+
 
 
 
