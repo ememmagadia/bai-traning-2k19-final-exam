@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniInformationSystem", "Mi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonnaci", "Fibonnaci\Fibonnaci.csproj", "{675A0802-E65A-453E-9894-F8B8BE024F14}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anagrams", "Anagrams\Anagrams.csproj", "{16699450-8A45-4BEB-BB33-B0DF9EE933F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{675A0802-E65A-453E-9894-F8B8BE024F14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{675A0802-E65A-453E-9894-F8B8BE024F14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{675A0802-E65A-453E-9894-F8B8BE024F14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16699450-8A45-4BEB-BB33-B0DF9EE933F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16699450-8A45-4BEB-BB33-B0DF9EE933F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16699450-8A45-4BEB-BB33-B0DF9EE933F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16699450-8A45-4BEB-BB33-B0DF9EE933F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -34,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{71540120-6AF0-492A-9270-BD88E60D1B1F} = {8058F040-95F9-4C7D-8463-EE5CFC8BB6A5}
 		{675A0802-E65A-453E-9894-F8B8BE024F14} = {834FAB48-0F40-4A67-95A0-1297AE58000F}
+		{16699450-8A45-4BEB-BB33-B0DF9EE933F7} = {C4569FC8-F3A6-428B-8BC1-17EAC5F1695B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {56DBFC05-C9DA-4199-A240-F8164995A920}
