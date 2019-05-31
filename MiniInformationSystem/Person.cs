@@ -42,7 +42,8 @@ namespace MiniInformationSystem
 
             if (queryDel.Count() > 0)
             {
-                people.Remove(new Person { Id = delKey });
+                //people.Remove(new Person { Id = delKey });
+                people.RemoveAll(a => a.Id == delKey);
 
                 Console.WriteLine("User deleted with ID {0}", delKey);
             }
