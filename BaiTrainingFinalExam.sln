@@ -9,9 +9,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercise2", "Exercise2", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bonus", "Bonus", "{C4569FC8-F3A6-428B-8BC1-17EAC5F1695B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MINI INFORMATION SYSTEM", "MINI INFORMATION SYSTEM\MINI INFORMATION SYSTEM.csproj", "{579A9D6D-8BA7-47CA-8CA4-ED851263FEE8}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{579A9D6D-8BA7-47CA-8CA4-ED851263FEE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{579A9D6D-8BA7-47CA-8CA4-ED851263FEE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{579A9D6D-8BA7-47CA-8CA4-ED851263FEE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{579A9D6D-8BA7-47CA-8CA4-ED851263FEE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{579A9D6D-8BA7-47CA-8CA4-ED851263FEE8} = {8058F040-95F9-4C7D-8463-EE5CFC8BB6A5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {56DBFC05-C9DA-4199-A240-F8164995A920}
