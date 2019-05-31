@@ -19,40 +19,58 @@ namespace Anagram
                 {"Astronomer ", "Moon starer" }
 
             };
-            string first = "heater";
-            string second = "reheat";
 
-            // foreach
-            Console.Write("{0} and {1} =>> ", first, second);
-            bool IfAnagram = CompareWords(first, second);
-            if(IfAnagram)
+            foreach (var item in words)
             {
-                Console.WriteLine("ANAGRAM");
-            }
-            else
-            {
-                Console.WriteLine("NOT ANAGRAM");
-            }
-        }
+                Console.Write("{0} and {1} =>> ", item.Key, item.Value);
+                // bool IfAnagram = CompareWords(first, second);
 
-        static bool CompareWords(string first, string second)
-        {
-            char[] secondArr = second.ToCharArray();
+                int firstWord = ConvertToInt(item.Key);
+                int secondWord = ConvertToInt(item.Value);
 
-            foreach (var index in first)
-            {
-                if (second.Contains(index))
+                if (firstWord == secondWord)
                 {
-                    int i = second.IndexOf(index);
-                    Console.Write(second);
+                    Console.WriteLine("ANAGRAM");
                 }
                 else
                 {
-                    return false;
+                    Console.WriteLine("NOT ANAGRAM");
                 }
             }
-            return true;
+            
         }
+
+        static int ConvertToInt(string word)
+        {
+            int total = 0;
+            word = word.Replace(" ", "");
+
+            for(int index = 0; index<word.Length; index++)
+            {
+                total += (int)word[index];
+            }
+
+            return total;
+        }
+
+        //static bool CompareWords(string first, string second)
+        //{
+        //    char[] secondArr = second.ToCharArray();
+
+        //    foreach (var index in first)
+        //    {
+        //        if (second.Contains(index))
+        //        {
+        //            int i = second.IndexOf(index);
+        //            Console.Write(second);
+        //        }
+        //        else
+        //        {
+        //            return false;
+        //        }
+        //    }
+        //    return true;
+        //}
 
         //static object ContainsLetter(char letter, string second)
         //{
