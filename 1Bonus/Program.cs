@@ -23,20 +23,19 @@ namespace _1Bonus
             {
                 y = w.Key.Replace(" ", "");
                 x = w.Value.Replace(" ", "");
-                if(y.Length != x.Length)
+                char[] word1 = y.ToLower().ToCharArray();
+                char[] word2 = x.ToLower().ToCharArray();
+                Array.Sort(word1);
+                Array.Sort(word2);
+                string a = new string(word1);
+                string b = new string(word2);
+                if( a == b)
                 {
-                    if (y.Contains(x))
-                    {
-                        Console.WriteLine($"{x} And {y} ANAGRAM");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"{x} And {y} NOT ANAGRAM ");
-                    }
+                    Console.WriteLine($"{y} And {x} Anagram");
                 }
                 else
                 {
-                    Console.WriteLine($"{x} And {y} ANAGRAM");
+                    Console.WriteLine($"{y} And {x} Not Anagram");
 
                 }
 

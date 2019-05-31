@@ -6,26 +6,28 @@ namespace _2Exercise
 {
    public class Recursive
     {
-        public int Action(int x)
+        public int Action(int number)
         {
-            
-            int result;
-            int j = 1;
-            if(x == 0)
-            {
-                return 0;
-            }
-            if(x == 1)
+
+            int num1 = 0, num2 = 1, num3, i;
+            if(number == 1)
             {
                 return 1;
             }
-            for(int i=0; i < x; i++, j++)
+            if ( number == 0)
             {
-                   result = i + j;
-              
-                   Console.WriteLine(result);    
+                return 0;
             }
-            return x;
+            Console.WriteLine(num1);
+            Console.WriteLine(num2);
+             for(i = 0; i < number; i++)
+            {
+                num3 = num1 + num2;
+                Console.WriteLine(num3);
+                num1 = num2;
+                num2 = num3;
+            }
+            return number;
         }
     }
 }
