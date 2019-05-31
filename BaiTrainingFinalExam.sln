@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bonus", "Bonus", "{C4569FC8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MINI INFORMATION SYSTEM", "MINI INFORMATION SYSTEM\MINI INFORMATION SYSTEM.csproj", "{579A9D6D-8BA7-47CA-8CA4-ED851263FEE8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIBONACCI", "FIBONACCI\FIBONACCI.csproj", "{886491AC-0127-4A24-9B0A-CF8ECE174475}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,12 +23,17 @@ Global
 		{579A9D6D-8BA7-47CA-8CA4-ED851263FEE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{579A9D6D-8BA7-47CA-8CA4-ED851263FEE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{579A9D6D-8BA7-47CA-8CA4-ED851263FEE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{886491AC-0127-4A24-9B0A-CF8ECE174475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{886491AC-0127-4A24-9B0A-CF8ECE174475}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{886491AC-0127-4A24-9B0A-CF8ECE174475}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{886491AC-0127-4A24-9B0A-CF8ECE174475}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{579A9D6D-8BA7-47CA-8CA4-ED851263FEE8} = {8058F040-95F9-4C7D-8463-EE5CFC8BB6A5}
+		{886491AC-0127-4A24-9B0A-CF8ECE174475} = {834FAB48-0F40-4A67-95A0-1297AE58000F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {56DBFC05-C9DA-4199-A240-F8164995A920}
