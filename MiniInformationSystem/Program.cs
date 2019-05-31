@@ -7,10 +7,15 @@ namespace MiniInformationSystem
     {
         static void Main(string[] args)
         {
+            MainMenu();
+          }
+
+
+        private static void MainMenu()
+        {
             string x;
             do
             {
-
                 Console.WriteLine("Add || Delete || Show || (1/2/3)");
                 x = Console.ReadLine();
 
@@ -19,52 +24,52 @@ namespace MiniInformationSystem
                     addPerson();
                 }
 
-                if (x.StartsWith("2"))
+                else if (x.StartsWith("2"))
                 {
                     deletePerson();
                 }
-                if(x.StartsWith("3"))
+                else if (x.StartsWith("3"))
                 {
                     showPerson();
                 }
-
-                
-                
-
             }
-            
-            while(!x.StartsWith("1") || !x.StartsWith("1") || !x.StartsWith("1"));
 
-
-            static void addPerson()
-        {
-               
-                string strPersonID = string.Empty;
-                string strPersonName = string.Empty;
-
-
-                List<Pips> ListofPeople = personclass.LoadPersonData();
-                ListofPeople.Add(new Pips(strPersonID, strPersonName));
-
-                Console.WriteLine("Enter ID:");
-                strPersonID = Console.ReadLine();
-                
-                Console.WriteLine("Enter Name");
-                strPersonName= Console.ReadLine();
-
-                 
+            while (!x.StartsWith("1") || !x.StartsWith("1") || !x.StartsWith("1"));
 
         }
-    }
+        static void addPerson()
+        {
 
+            string strPersonID = string.Empty;
+            string strPersonName = string.Empty;
+
+            Console.WriteLine("Enter ID:");
+
+            strPersonID = Console.ReadLine();
+
+            Console.WriteLine("Enter Name");
+            strPersonName = Console.ReadLine();
+
+
+            List<Pips> ListofPeople = personclass.LoadPersonData();
+            ListofPeople.Add(new Pips(strPersonID, strPersonName));
+            MainMenu();
+        }
         private static void showPerson()
         {
-            throw new NotImplementedException();
+            List<Pips> people = personclass.LoadPersonData();
+
+            foreach (var person in people)
+            {
+                Console.WriteLine("{0}, {1}", person.PersonID, person.PersonName);
+            }
+            MainMenu();
         }
+
 
         private static void deletePerson()
         {
-            throw new NotImplementedException();
+            
         }
         public class personclass
         {
