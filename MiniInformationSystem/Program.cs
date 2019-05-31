@@ -13,7 +13,7 @@ namespace MiniInformationSystem
 
             while (true)
             {
-                Console.Write("Add, delete or view persons? (A/D/V)");
+                Console.Write("Add, delete or view persons? (A/D/V) 'exit' to exit: ");
                 choice = Console.ReadLine();
                 if (choice == "a") addPerson(personList);
                 else if (choice == "d") deletePerson(personList);
