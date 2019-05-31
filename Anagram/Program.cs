@@ -44,6 +44,7 @@ namespace Anagram
                 Console.WriteLine(result ? "ANAGRAM" : "NOT-ANAGRAM");
 
             }
+            
         }
     }
 }
