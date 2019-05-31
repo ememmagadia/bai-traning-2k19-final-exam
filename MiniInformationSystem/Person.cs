@@ -102,42 +102,27 @@ namespace MiniInformationSystem
 
         public List<Person> DeletePerson(List<Person> people,string keyword)
         {
-            var records = from person in people
-                          where String.Equals(person.LastName, keyword, StringComparison.CurrentCultureIgnoreCase)
-                          select new
-                          {
-                              FirstName = person.FirstName,
-                              LastName = person.LastName,
-                              UserId = person.UserId
-                          };
+            //var records = from person in people
+            //              where !(String.Equals(person.LastName, keyword, StringComparison.CurrentCultureIgnoreCase))
+            //              select new
+            //              {
+            //                  FirstName = person.FirstName,
+            //                  LastName = person.LastName,
+            //                  UserId = person.UserId
+            //              };
 
-            if(records.Count() > 0)
-            {
-                foreach (var item in records)
-                {
-                    Person deletePerson = new Person()
-                    {
-                        FirstName = item.FirstName,
-                        LastName = item.LastName,
-                        UserId = item.UserId
-                    };
+            //if(records.Count() > 0)
+            //{
+            //    Console.WriteLine("Successfully deleted {0}.", keyword);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("No last name found for {0}.", keyword);
+            //}
 
-                    int index = people.IndexOf(deletePerson);
-                    if(index > 0)
-                    {
-                        people.RemoveAt(index);
-                        Console.WriteLine("Successfully deleted {0}.", keyword);
-                    }
-                    else
-                    {
-                        Console.WriteLine("No last name found for {0}.", keyword);
-                    }
-                }
-            }
-            else
-            {
-                Console.WriteLine("No last name found for {0}.", keyword);
-            }
+            people.RemoveAll(x => x.LastName.ToLower() == keyword.ToLower());
+            Console.WriteLine("Successfully deleted {0}.", keyword);
+
             return people;
         }
 
